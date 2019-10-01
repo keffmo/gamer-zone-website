@@ -193,6 +193,71 @@ nav a#openup {
   display: none;
 }
 
+/* Social Media Left Panel */
+.social {
+  position: fixed;
+  top: 40%;
+  background: rgba(0, 0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translateX(-270px);
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+
+.social ul li:hover {
+  transform: translateX(110px);
+}
+
+.social ul li.twitter:hover {
+  background-color: #55acee;
+}
+
+.social ul li.facebook:hover {
+  background-color: #3d5999;
+}
+
+.social ul li.youtube:hover {
+  background-color: #c4302b;
+}
+
+.social ul li a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+}
+
+.social ul li i {
+  text-align: center;
+  margin-left: 14px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
+
+.social ul li:hover i {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+
 /* Media Queries for Responsiveness */
 
 @media screen and (max-width: 580px) {
@@ -259,7 +324,11 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+  .social{
+    display: none;
+  }
 }
+
 .cf:before,
 .cf:after {
   content: "";
@@ -277,6 +346,16 @@ nav a#openup {
 @media screen and (max-width: 780px) {
   .contacts {
     grid-template-columns: 1fr;
+    
+  }
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo-container img{
+    width: 256px;
+    height: 256px;
   }
   footer .footer-cols {
     display: none;
