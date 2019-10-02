@@ -6,7 +6,7 @@
   --primary-color-hover: #d3071b;
   --secondary-color: #103063;
   --secondary-color-hover: #143f85;
-  --light-color: #f4f4f4;
+  --light-color: lightgray;
 }
 
 body {
@@ -19,6 +19,7 @@ body {
 
 img {
   width: 100%;
+  padding-top: 5px;
 }
 
 a {
@@ -151,7 +152,7 @@ footer .footer-bottom {
 
 .bg-light {
   background: var(--light-color);
-  color: #333;
+  color: black;
 }
 
 .mb {
