@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+
+/* CSS Variables */
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: lightgray;
+}
+
 body {
   font-family: "Turret Road", cursive;
-  line-height: 1.6;
-  margin: 0;
   background-color: #252529;
   margin: 0;
-  color: white;
+  color: #fff;
+  line-height: 1.6;
 }
 
 img {
@@ -16,31 +24,31 @@ img {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ccc;
 }
 
+/* Section */
 .section {
   padding: 2rem 0;
 }
 
-.section .section-head {
+.section-head {
   font-size: 2.5rem;
   margin: 0;
 }
 
-.section .section h3 {
+.section h3 {
   font-size: 2rem;
 }
 
 .contacts {
-  display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: 256px auto;
-      grid-template-columns: 256px auto;
+  grid-template-columns: 256px auto;
   text-align: left;
 }
 
+/* Showcase */
 #showcase {
   margin: 0;
   padding: 0;
@@ -64,12 +72,11 @@ a {
   font-size: 2rem;
 }
 
+/* Footer */
 footer .footer-cols {
-  display: -ms-grid;
   display: grid;
   grid-gap: 20px;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 2rem;
   text-align: left;
   font-size: 14px;
@@ -89,9 +96,9 @@ footer .footer-cols ul li:first-child {
 footer .footer-bottom {
   background: #333;
   padding: 1rem;
-  text-align: center;
 }
 
+/* Utility Classes */
 .container {
   max-width: 1180px;
   text-align: center;
@@ -103,35 +110,48 @@ footer .footer-bottom {
   font-size: 1.3rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
 .btn {
   padding: 1rem;
-  color: white;
+  color: #fff;
   display: inline-block;
 }
 
 .btn-primary {
-  background: #b90415;
+  background: var(--primary-color);
 }
 
 .btn-primary:hover {
-  background: #d3071b;
+  background: var(--primary-color-hover);
 }
 
 .btn-secondary {
-  background: #103063;
+  background: var(--secondary-color);
 }
 
 .btn-secondary:hover {
-  background: #143f85;
+  background: var(--secondary-color-hover);
 }
 
 /* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
 .text-secondary {
-  color: #143f85;
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
 }
 
 .bg-light {
-  background: lightgray;
+  background: var(--light-color);
   color: black;
 }
 
@@ -143,6 +163,7 @@ footer .footer-bottom {
   margin-top: 1rem;
 }
 
+/* Navigation */
 nav {
   height: 40px;
   width: 100%;
@@ -150,16 +171,13 @@ nav {
   color: #eee;
   position: fixed;
 }
-
 nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav li {
   display: inline;
 }
-
 nav a {
   display: inline-block;
   width: 100px;
@@ -169,30 +187,28 @@ nav a {
   color: #eee;
   text-decoration: none;
 }
-
-nav a:hover {
+nav li:hover {
   background-color: #444;
 }
-
 nav a#openup {
   display: none;
 }
 
-.social-nav {
+/* Social Media Left Panel */
+.social {
   position: fixed;
   top: 40%;
   background: rgba(0, 0, 0, 0);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.social-nav ul {
+.social ul {
   list-style-type: none;
   padding: 0;
-  -webkit-transform: translateX(-270px);
-          transform: translateX(-270px);
+  transform: translateX(-270px);
 }
 
-.social-nav ul li {
+.social ul li {
   display: block;
   margin: 5px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -200,23 +216,32 @@ nav a#openup {
   text-align: right;
   padding: 10px;
   border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.social-nav ul li:hover {
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
+.social ul li:hover {
+  transform: translateX(110px);
 }
 
-.social-nav ul li a {
+.social ul li.twitter:hover {
+  background-color: #55acee;
+}
+
+.social ul li.facebook:hover {
+  background-color: #3d5999;
+}
+
+.social ul li.youtube:hover {
+  background-color: #c4302b;
+}
+
+.social ul li a {
   display: inline;
   color: white;
   text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
 }
 
-.social-nav ul li i {
+.social ul li i {
   text-align: center;
   margin-left: 14px;
   color: black;
@@ -226,48 +251,37 @@ nav a#openup {
   width: 20px;
   height: 20px;
   font-size: 20px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
-.social-nav ul li:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: all 1s;
+.social ul li:hover i {
+  transform: rotate(360deg);
   transition: all 1s;
 }
 
-.social-nav ul .twitter:hover {
-  background-color: #55acee;
-}
-
-.social-nav ul .facebook:hover {
-  background-color: #3d5999;
-}
-
-.social-nav ul .youtube:hover {
-  background-color: #c4302b;
-}
+/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 580px) {
   .hide-on-small {
     display: none;
   }
-  .social-nav {
-    display: none;
-  }
+
   #showcase {
     height: 50vh;
   }
+
   #showcase .container {
     margin-top: 15vh;
   }
+
   #showcase h1 {
     font-size: 3rem;
   }
+
   #showcase h2 {
     font-size: 1.5rem;
   }
+
   nav {
     height: auto;
     border-bottom: 0;
@@ -311,6 +325,9 @@ nav a#openup {
     width: 100%;
     position: relative;
   }
+  .social{
+    display: none;
+  }
 }
 
 .cf:before,
@@ -329,21 +346,15 @@ nav a#openup {
 
 @media screen and (max-width: 780px) {
   .contacts {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    
   }
   .logo-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
-  .logo-container img {
+  .logo-container img{
     width: 256px;
     height: 256px;
   }
@@ -357,4 +368,3 @@ nav a#openup {
     display: none;
   }
 }
-/*# sourceMappingURL=main.css.map */

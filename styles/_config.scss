@@ -1,0 +1,28 @@
+// Google "Turret Road" Font Import
+@import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+
+// Google "Shadows Into Light" Font Import
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+
+// Global Variables
+$blog-button-color: #b90415;
+$blog-button-color-hover: #d3071b;
+$forums-button-color: #103063;
+$forums-button-color-hover: #143f85;
+$dark-background-color: #252529;
+$light-background-color: lightgray;
+$font-color: white;
+
+// Mixins
+@mixin flex-center($flex-direction) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin global-font-format() {
+    font-family: "Turret Road", cursive;
+    line-height: 1.6;
+    margin: 0;
+}
