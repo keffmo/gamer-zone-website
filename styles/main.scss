@@ -3,7 +3,7 @@
 
 // Global Properties
 body{
-@include global-font-format();
+@include global-font();
 background-color: $dark-background-color;
 margin: 0;
 color: $font-color;
@@ -178,8 +178,7 @@ nav {
   position: fixed;
   top: 40%;
   background: rgba(0, 0, 0, 0);
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
+  @include social-panel-font(20px);
   ul {
     list-style-type: none;
     padding: 0;

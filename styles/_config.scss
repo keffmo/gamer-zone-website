@@ -10,7 +10,7 @@ $blog-button-color-hover: #d3071b;
 $forums-button-color: #103063;
 $forums-button-color-hover: #143f85;
 $dark-background-color: #252529;
-$light-background-color: lightgray;
+$light-background-color: darkgray;
 $font-color: white;
 
 // Mixins
@@ -21,8 +21,13 @@ $font-color: white;
     align-items: center;
 }
 
-@mixin global-font-format() {
+@mixin global-font() {
     font-family: "Turret Road", cursive;
     line-height: 1.6;
     margin: 0;
+}
+
+@mixin social-panel-font($font-size) {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: $font-size;
 }
