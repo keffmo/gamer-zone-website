@@ -143,7 +143,7 @@ footer {
 }
 
 //Navigation Panel
-nav {
+.cf {
   height: 40px;
   width: 100%;
   background-color: #333;
@@ -180,6 +180,8 @@ nav {
   background: rgba(0, 0, 0, 0);
   @include social-panel-font(20px);
   ul {
+    width: 50%;
+    height: 50px;
     list-style-type: none;
     padding: 0;
     transform: translateX(-270px);
