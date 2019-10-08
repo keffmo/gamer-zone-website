@@ -1,5 +1,4 @@
-# gamer-zone-website
-Website for Gamer Zone Clan
+# Website for Gamer Zone Clan
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/keffmo/gamer-zone-website/blob/master/LICENSE)
 [![Version](https://img.shields.io/badge/version-0.3.3-orange.svg)](https://github.com/keffmo/gamer-zone-website/releases)
