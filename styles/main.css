@@ -111,6 +111,7 @@ footer .footer-bottom {
 
 .btn-primary {
   background: #b90415;
+  border-radius: 30px;
 }
 
 .btn-primary:hover {
@@ -119,6 +120,7 @@ footer .footer-bottom {
 
 .btn-secondary {
   background: #103063;
+  border-radius: 30px;
 }
 
 .btn-secondary:hover {

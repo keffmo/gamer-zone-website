@@ -110,6 +110,7 @@ footer {
 
 .btn-primary {
   background: $blog-button-color;
+  border-radius: 30px;
   &:hover{
     background: $blog-button-color-hover;
   }
@@ -117,6 +118,7 @@ footer {
 
 .btn-secondary {
   background: $forums-button-color;
+  border-radius: 30px;
   &:hover{
     background: $forums-button-color-hover;
   }
