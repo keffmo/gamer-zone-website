@@ -1,10 +1,126 @@
 @import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+/*
+    Style for the sticky left side social media panel
+    fixed position with transparency and animation
+*/
+@import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Turret+Road&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+.social-nav {
+  position: fixed;
+  top: 40%;
+  background: rgba(0, 0, 0, 0);
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+}
+
+.social-nav ul {
+  width: 50%;
+  list-style-type: none;
+  padding: 0;
+  -webkit-transform: translateX(-270px);
+          transform: translateX(-270px);
+}
+
+.social-nav ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.social-nav ul li:hover {
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
+}
+
+.social-nav ul li a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.social-nav ul li i {
+  text-align: center;
+  margin-left: 14px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.social-nav ul li:hover i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.social-nav ul .twitter:hover {
+  background-color: #55acee;
+}
+
+.social-nav ul .facebook:hover {
+  background-color: #3d5999;
+}
+
+.social-nav ul .youtube:hover {
+  background-color: #c4302b;
+}
+
+/*
+    Style for the fixed back to top button
+*/
+#back-to-top-button {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  bottom: 25px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  background-color: rgba(30, 144, 255, 0.5);
+  color: white;
+  border-radius: 5px 20px 5px;
+  font-size: 20px;
+}
+
+#back-to-top-button:hover {
+  background-color: #135CA3;
+}
+
+@media screen and (max-width: 780px) {
+  #back-to-top-button {
+    bottom: 15px;
+    right: 10px;
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: "Turret Road", cursive;
   line-height: 1.6;
   margin: 0;
-  background-color: #252529;
+  background-color: #252525;
   margin: 0;
   color: white;
 }
@@ -180,79 +296,6 @@ nav a:hover {
 
 nav a#openup {
   display: none;
-}
-
-.social-nav {
-  position: fixed;
-  top: 40%;
-  background: rgba(0, 0, 0, 0);
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
-}
-
-.social-nav ul {
-  width: 50%;
-  list-style-type: none;
-  padding: 0;
-  -webkit-transform: translateX(-270px);
-          transform: translateX(-270px);
-}
-
-.social-nav ul li {
-  display: block;
-  margin: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 300px;
-  text-align: right;
-  padding: 10px;
-  border-radius: 0 30px 30px 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.social-nav ul li:hover {
-  -webkit-transform: translateX(110px);
-          transform: translateX(110px);
-}
-
-.social-nav ul li a {
-  display: inline;
-  color: white;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.social-nav ul li i {
-  text-align: center;
-  margin-left: 14px;
-  color: black;
-  background-color: white;
-  padding: 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.social-nav ul li:hover i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.social-nav ul .twitter:hover {
-  background-color: #55acee;
-}
-
-.social-nav ul .facebook:hover {
-  background-color: #3d5999;
-}
-
-.social-nav ul .youtube:hover {
-  background-color: #c4302b;
 }
 
 @media screen and (max-width: 580px) {

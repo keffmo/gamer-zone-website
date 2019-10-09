@@ -5,16 +5,32 @@
 @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
 
 // Global Variables
+$font-color: white;
+
+// Top Nav Bar
 $nav-background-color: #333333;
 $nav-hover-color: black;
 $nav-font-color: white;
+
+// Blog Button
 $blog-button-color: #b90415;
 $blog-button-color-hover: #d3071b;
+
+// Forums Button
 $forums-button-color: #103063;
 $forums-button-color-hover: #143f85;
-$dark-background-color: #252529;
+
+// Section Backgrounds
+$dark-background-color: #252525;
 $light-background-color: darkgray;
-$font-color: white;
+
+// Back to Top Button
+$b2t-background-color: rgba(30, 144, 255, 0.5); // html color #1E90FF
+$b2t-color: white;
+$b2t-font-size: 20px;
+$b2t-font-size-mobile: 12px;
+$b2t-border-radius: 5px 20px 5px;
+$b2t-hover-background-color: #135CA3;
 
 // Mixins
 @mixin flex-center($flex-direction) {
