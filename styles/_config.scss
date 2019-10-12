@@ -30,23 +30,23 @@ $b2t-color: white;
 $b2t-font-size: 20px;
 $b2t-font-size-mobile: 12px;
 $b2t-border-radius: 5px 20px 5px;
-$b2t-hover-background-color: #135CA3;
+$b2t-hover-background-color: #135ca3;
 
 // Mixins
 @mixin flex-center($flex-direction) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin global-font() {
-    font-family: "Turret Road", cursive;
-    line-height: 1.6;
-    margin: 0;
+  font-family: "Turret Road", cursive;
+  line-height: 1.6;
+  margin: 0;
 }
 
 @mixin social-panel-font($font-size) {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: $font-size;
+  font-family: "Shadows Into Light", cursive;
+  font-size: $font-size;
 }

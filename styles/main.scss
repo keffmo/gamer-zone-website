@@ -4,33 +4,33 @@
 @import "./back-to-top-button";
 
 // Global Properties
-body{
-@include global-font();
-background-color: $dark-background-color;
-margin: 0;
-color: $font-color;
+body {
+  @include global-font();
+  background-color: $dark-background-color;
+  margin: 0;
+  color: $font-color;
 }
 
-img{
-    width: 100%;
-    padding-top: 5px;
+img {
+  width: 100%;
+  padding-top: 5px;
 }
 
-a{
-    text-decoration: none;
-    color: $font-color;
+a {
+  text-decoration: none;
+  color: $font-color;
 }
 
 // Sections
 .section {
-    padding: 2rem 0;
+  padding: 2rem 0;
 
-    .section-head {
+  .section-head {
     font-size: 2.5rem;
     margin: 0;
   }
-  
-    .section h3 {
+
+  .section h3 {
     font-size: 2rem;
   }
 }
@@ -113,7 +113,7 @@ footer {
 .btn-primary {
   background: $blog-button-color;
   border-radius: 30px;
-  &:hover{
+  &:hover {
     background: $blog-button-color-hover;
   }
 }
@@ -121,7 +121,7 @@ footer {
 .btn-secondary {
   background: $forums-button-color;
   border-radius: 30px;
-  &:hover{
+  &:hover {
     background: $forums-button-color-hover;
   }
 }
@@ -168,7 +168,7 @@ nav {
     padding: 7px 0;
     color: $nav-font-color;
     text-decoration: none;
-    &:hover{
+    &:hover {
       background-color: $nav-hover-color;
       transition: 1.5s;
     }
@@ -184,7 +184,7 @@ nav {
     display: none;
   }
 
-  .social-nav{
+  .social-nav {
     display: none;
   }
 
@@ -243,7 +243,7 @@ nav {
       width: 100%;
       position: relative;
     }
-  }  
+  }
 }
 
 .cf:before,
@@ -262,13 +262,13 @@ nav {
 
 @media screen and (max-width: 780px) {
   .contacts {
-    grid-template-columns: 1fr;   
+    grid-template-columns: 1fr;
   }
   .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+    img {
       width: 256px;
       height: 256px;
     }

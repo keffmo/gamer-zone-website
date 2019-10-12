@@ -6,29 +6,29 @@
 @import "./config";
 
 #back-to-top-button {
-    display: none; /* Hidden by default */
-    position: fixed; 
-    bottom: 25px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; 
-    outline: none; 
-    cursor: pointer; 
-    padding: 15px; 
-    background-color: $b2t-background-color; 
-    color: $b2t-color; 
-    border-radius: $b2t-border-radius; 
-    font-size: $b2t-font-size; 
-    &:hover {
-        background-color: $b2t-hover-background-color; 
-      }
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 25px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  background-color: $b2t-background-color;
+  color: $b2t-color;
+  border-radius: $b2t-border-radius;
+  font-size: $b2t-font-size;
+  &:hover {
+    background-color: $b2t-hover-background-color;
   }
+}
 
 // Decreases size and moves the button on mobile devices
 @media screen and (max-width: 780px) {
-    #back-to-top-button{
-        bottom: 15px;
-        right: 10px;
-        font-size: $b2t-font-size-mobile;
-    }
+  #back-to-top-button {
+    bottom: 15px;
+    right: 10px;
+    font-size: $b2t-font-size-mobile;
+  }
 }
